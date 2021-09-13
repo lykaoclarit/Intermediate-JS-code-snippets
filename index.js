@@ -122,3 +122,26 @@ else if (count % 5 === 0){
 count++;
 console.log(output);
 }
+
+
+//Fibonacci 
+
+function fibonacciGenerator (n) {
+    
+    //Write your code here:
+     if (n===1) 
+  {
+    return [0];
+  } 
+  else if (n===2) {
+      return [0,1]
+  } 
+  
+  else 
+  {
+    var i = fibonacciGenerator(n - 1);
+    i.push(i[i.length - 1] + i[i.length - 2]);
+    return i;
+  }
+
+}
