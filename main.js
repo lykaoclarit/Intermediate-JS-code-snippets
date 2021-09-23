@@ -169,4 +169,25 @@ return output;
 i = fibonacciGenerator(5);
  console.log(i);
 
+//Simple Calculator for 2 inputs 
+//High Order Function
 
+function add(num1,num2){
+   return num1 + num2;
+}
+
+function multiply(num1,num2){
+   return num1*num2;
+}
+
+function subtract(num1,num2){
+    return num1-num2;
+}
+
+function divide(num1,num2){
+    return num1/num2;
+}
+
+function calculator(num1, num2, operator){
+    return operator(num1,num2);
+}
