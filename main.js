@@ -36,29 +36,6 @@ function calcRoundUp(bmi){
 
 //leap year calculator
 function isLeap(year){
-var by4 = year % 4;
-var by100 = year % 100;
-var by400 = year % 400;
-var decision;
-
-if (by4 === 0 && by100 !== 0 ){
-   decision = "Leap year.";
-} 
-if (by100 !== 0 && by400 === 0){
-    decision ="Leap year.";
-}
-if (by4 === 0 && by100 !== 0){
-    decision ="Leap year."
-}
-else{
-    decision ="Not leap year.";
-}
-return decision;
-}
-
-//other solution
-//leap year calculator
-function isLeap(year){
 if(year % 4 === 0){
     if(year % 100 === 0){
         if(year % 400 === 0){
